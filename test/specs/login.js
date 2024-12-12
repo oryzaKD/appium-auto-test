@@ -50,14 +50,24 @@ describe("My Login Demo", () => {
 
     await $('//android.widget.Button[@resource-id="com.eraspace.app.membership:id/btnLogin"]').click()
 
+    //Menampilkan Homepage
     await expect($('//android.widget.ImageButton[@resource-id="com.eraspace.app:id/btnIconSecondary"]'))
 
-    await driver.pause(5000)
+    await driver.pause(3000)
+
+    //Menampilkan List Menu dan Kategori
+    await $('//android.widget.TextView[@resource-id="com.eraspace.app:id/navigation_bar_item_small_label_view" and @text="Kategori"]').click()
+
+    //Menampilkan Nama Akun
+    await $('//android.widget.TextView[@resource-id="com.eraspace.app:id/navigation_bar_item_small_label_view" and @text="Akun"]').click()
+
+    //Menampilkan List Point    
+    await $('//android.widget.TextView[@resource-id="com.eraspace.app:id/tvMyPoint"]').click()
+    await $('//android.widget.ImageButton[@content-desc="Navigate up"]').click()
+
   });
 
   it("Logout from application", async () => {
-
-    await $('//android.widget.TextView[@resource-id="com.eraspace.app:id/navigation_bar_item_small_label_view" and @text="Akun"]').click()
 
     await $('//android.widget.ImageView[@resource-id="com.eraspace.app:id/imgBackground"]').click()
 
