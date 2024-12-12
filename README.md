@@ -1,7 +1,7 @@
 Link Recording 
 https://drive.google.com/file/d/1xeKuTlBVK7CbLniQmleH65OdaANfz5-j/view?usp=sharing
 
-HOW TO RUNNING THE AUTOMATION TEST CODE WITH CYPRESS:
+HOW TO RUNNING THE AUTOMATION TEST CODE WITH APPIUM (ANDROID):
 
 1. **Buka CMD (Command Prompt), lalu jalankan perintah dibawah. Digunakan untuk membuka port appium nya**
    
