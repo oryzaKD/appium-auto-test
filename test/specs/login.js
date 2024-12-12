@@ -44,7 +44,7 @@ describe("My Login Demo", () => {
   it("should login with valid credentials", async () => {
     await driver.pause(3000)
 
-    //Fill the field
+    // Fill the field
     await $('//android.widget.EditText[@resource-id="com.eraspace.app.membership:id/edtPhoneOrEmail"]').setValue("oryza.audrey@gmail.com");
     await $('//android.widget.EditText[@resource-id="com.eraspace.app.membership:id/edtPassword"]').setValue("Ozrn8mhg!$");
 
@@ -63,7 +63,9 @@ describe("My Login Demo", () => {
 
     //Menampilkan List Point    
     await $('//android.widget.TextView[@resource-id="com.eraspace.app:id/tvMyPoint"]').click()
-    await $('//android.widget.ImageButton[@content-desc="Navigate up"]').click()
+    await driver.pause(3000)
+    await $('//android.widget.ImageButton[@resource-id="com.eraspace.app:id/btnBack"]').click()
+    await driver.pause(3000)
 
   });
 
