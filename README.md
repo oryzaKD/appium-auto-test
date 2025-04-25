@@ -1,26 +1,26 @@
 Link Recording 
-https://drive.google.com/file/d/1xeKuTlBVK7CbLniQmleH65OdaANfz5-j/view?usp=sharing
+https://drive.google.com/file/d/1OC3Sv2Nnde-vR-C5vEAfWOlsbopvEgZS/view?usp=sharing
 
 HOW TO RUNNING THE AUTOMATION TEST CODE WITH APPIUM (ANDROID):
 
-1. **Buka CMD (Command Prompt), lalu jalankan perintah dibawah. Digunakan untuk membuka port appium nya**
+1. **Open CMD (Command Prompt), then run the command below. It's used to open the Appium port.**
    
    ```bash
    appium -p 4723
 
-2. **Buka aplikasi Android Studio, lalu jalankan salah satu Device Android yang telah dibuat dan disesuaikan dengan capabilities pada file wdio.conf.js nya**
+2. **Open Android Studio, then run one of the Android emulators that you’ve created and make sure its configuration matches the capabilities in the wdio.conf.js file.**
    
    ![image](https://github.com/user-attachments/assets/d0a2f3c4-6043-4acf-8a98-e4c6ae004747)
 
-3. **Buka aplikasi Appium Inspector, lalu klik Start Session untuk menjalankan session bersamaan dengan emulator di Android Studio nya**
+3. **Open Appium Inspector, then click "Start Session" to start a session alongside the emulator running in Android Studio.**
 
    ![image](https://github.com/user-attachments/assets/54e0aeeb-2dfe-4cc3-9548-650894b8b9fc)
 
-4. **Lalu buka VSCODE untuk membuka project automation script android nya**
+4. **Open VS Code to access your Android automation script project.**
 
-5. **Lalu untuk running automation script nya, jalankan perintah dibawah**
+5. **To run the automation script, execute the command below in the terminal:**
    
    ```bash
    npx wdio run ./wdio.conf.js
    
-6. **Ketika sudah running perintah diatas, sambil dibuka device Android yang tadi sudah kita jalankan, agar dapat melihat proses automation test androidnya nya secara langsung**
+6. **While the command is running, keep the Android emulator open so you can see the automation test running live on the device.**
